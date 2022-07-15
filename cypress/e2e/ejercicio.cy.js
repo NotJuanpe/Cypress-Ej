@@ -65,6 +65,10 @@ describe('CP003',function(){
   it('Seleccionar Credicoop y Visa',function(){
     celular_page.seleccionar_banco_tarjeta()
   })
+
+  it('Verificar 60 cuotas',function(){
+    celular_page.exitencia_60_cuotas()
+  })
   
 })
 

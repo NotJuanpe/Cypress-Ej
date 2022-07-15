@@ -11,6 +11,7 @@
     "info_financiacion":"#open-installments-modal",
     "banco":"#selectBank",
     "tarjeta":"#selectCardByBank",
-    "cantidad_equipos":"#toolbar-amount > span"
+    "cantidad_equipos":"#toolbar-amount > span",
+    "tabla": ".bold-tr td"
   }
   

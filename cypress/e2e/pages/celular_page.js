@@ -20,6 +20,22 @@ class celular_page{
         })
     }
 
+    exitencia_60_cuotas = () => {
+
+        let cuotas_60 = false;
+
+        cy.fixture('ejercicio.json').then((selectors) => {
+            cy.get(selectors.tabla).each((cuotas, interes, contratacion) => {
+                if(cuotas.text() == '60'){
+                    cuotas_60 = true;
+                }
+            });
+        }).then(() => {
+            expect(cuotas_60).to.be.false;
+            cy.log('Banco Credicop y tarjeta Visa no poseen 60 cuotas')
+        });
+    }
+
 
     
 }
