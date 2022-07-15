@@ -66,10 +66,6 @@ describe('CP003',function(){
     celular_page.seleccionar_banco_tarjeta()
   })
   
-
-
-
-
 })
 
 /* describe('CP004',function(){
