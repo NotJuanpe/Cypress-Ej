@@ -1,0 +1,16 @@
+{
+    "url_movistar": "https://tienda.movistar.com.ar/",
+    "boton_busqueda": "#search_mini_form > div.actions > button",
+    "busqueda": "#search",
+    "celular":"#layer-product-list > div > div.products.wrapper.grid.products-grid > ol > li",
+    "doce_cuotas":"#installments-text",
+    "filtro_boton":"#layered-filter-block > div.block-title.filter-title > strong",
+    "precio_filtro":"a[href='https://tienda.movistar.com.ar/?price=100000-200000']",
+    "memoria_filtro":"a[href='https://tienda.movistar.com.ar/?movistar_internalmemory=916&price=100000-200000']",
+    "tercer_producto":"#layer-product-list > div.products.wrapper.grid.products-grid > ol > li:nth-child(3)",
+    "info_financiacion":"#open-installments-modal",
+    "banco":"#selectBank",
+    "tarjeta":"#selectCardByBank",
+    "cantidad_equipos":"#toolbar-amount > span"
+  }
+  
