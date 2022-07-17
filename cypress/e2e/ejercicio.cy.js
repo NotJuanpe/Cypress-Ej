@@ -9,11 +9,13 @@ describe('CP001',function(){
   before(function(){
     cy.visit("https://tienda.movistar.com.ar")
     cy.url().should('include', "https://tienda.movistar.com.ar")
+    cy.viewport(1280,800)
 
   })
 
   it('Que el equipo seleccionado sea el A52',function(){
     index_page.search('A52')
+    cy.screenshot()
   })
 
   it('Seleccionar A52',function(){
@@ -32,6 +34,8 @@ describe('CP002',function(){
   before(function(){
     cy.visit("https://tienda.movistar.com.ar")
     cy.url().should('include', "https://tienda.movistar.com.ar")
+    cy.viewport(1280,800)
+
 
   })
 
@@ -45,6 +49,7 @@ describe('CP002',function(){
   
   it('Cantidad de articulos encontrados',function(){
     productos_page.articulos_encontrados()
+    cy.screenshot()
   })
   
 })
@@ -54,6 +59,7 @@ describe('CP003',function(){
   before(function(){
     cy.visit("https://tienda.movistar.com.ar")
     cy.url().should('include', "https://tienda.movistar.com.ar")
+    cy.viewport(1280,800)
 
   })
 
@@ -77,15 +83,18 @@ describe('CP003',function(){
 
 
 describe('CP004',function(){
-  
+
   before(function(){
     cy.visit("https://tienda.movistar.com.ar")
     cy.url().should('include', "https://tienda.movistar.com.ar")
+    cy.viewport(1280,800)
+
 
   })
 
   it('Que el equipo seleccionado sea el Z Flip',function(){
     index_page.search('Z Flip')
+    cy.screenshot()
   })
 
   it('Seleccionar Z Flip',function(){

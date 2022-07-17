@@ -50,9 +50,10 @@ class celular_page{
             if(selectors.porcetaje_eco <= '55'){
                 ecologico = true;
                 cy.log('El celular es eco-frienly')
+            }else{
+                cy.log('El celular no es eco-frienly')
             }
-        }).then(() => {
-            cy.log('El celular  no es eco-frienly')
+
         });
     }
 
