@@ -3,10 +3,12 @@ import productos_page from '../e2e/pages/productos_page';
 import index_page from '../e2e/pages/index_page';
 
 
+
 describe('CP001',function(){
+  
   before(function(){
-      cy.visit('https://tienda.movistar.com.ar/')
-      cy.url().should('include', 'https://tienda.movistar.com.ar/')
+    cy.visit("https://tienda.movistar.com.ar")
+    cy.url().should('include', "https://tienda.movistar.com.ar")
 
   })
 
@@ -26,9 +28,10 @@ describe('CP001',function(){
 })
 
 describe('CP002',function(){
+
   before(function(){
-      cy.visit('https://tienda.movistar.com.ar/')
-      cy.url().should('include', 'https://tienda.movistar.com.ar/')
+    cy.visit("https://tienda.movistar.com.ar")
+    cy.url().should('include', "https://tienda.movistar.com.ar")
 
   })
 
@@ -47,10 +50,10 @@ describe('CP002',function(){
 })
 
 describe('CP003',function(){
-  before(function(){
 
-      cy.visit('https://tienda.movistar.com.ar/')
-      cy.url().should('include', 'https://tienda.movistar.com.ar/')
+  before(function(){
+    cy.visit("https://tienda.movistar.com.ar")
+    cy.url().should('include', "https://tienda.movistar.com.ar")
 
   })
 
@@ -74,9 +77,11 @@ describe('CP003',function(){
 
 
 describe('CP004',function(){
+  
   before(function(){
-      cy.visit('https://tienda.movistar.com.ar/')
-      cy.url().should('include', 'https://tienda.movistar.com.ar/')
+    cy.visit("https://tienda.movistar.com.ar")
+    cy.url().should('include', "https://tienda.movistar.com.ar")
+
   })
 
   it('Que el equipo seleccionado sea el Z Flip',function(){
@@ -94,8 +99,6 @@ describe('CP004',function(){
   it('Es ecologico',function(){
     celular_page.es_ecologico()
   })
-
-
 
 }) 
 
