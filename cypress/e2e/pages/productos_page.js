@@ -2,7 +2,7 @@ class productos_page{
 
     click_en_celular = () => {
         cy.fixture('ejercicio.json').then((selectors) => {
-            cy.get(selectors.celular).click({force:true})
+            cy.get(selectors.celular).click()
         })
     }
 
@@ -19,11 +19,11 @@ class productos_page{
             cy.get(selectors.memoria_filtro).click({force:true})
         })
     }
-
     
     articulos_encontrados = () => {
         cy.fixture('ejercicio.json').then((selectors) => {
-            cy.get(selectors.cantidad_equipos).should('contain','3')
+            cy.get(selectors.cantidad_equipos).invoke('text').then(cy.log)
+
         })
     }
 

@@ -36,6 +36,28 @@ class celular_page{
         });
     }
 
+    seleccionar_caracteristicas = () => {
+        cy.fixture('ejercicio.json').then((selectors) => {
+            cy.get(selectors.caracteristicas_destacadas).click()
+        })
+    }
+
+    es_ecologico = () => {
+
+        let ecologico = false;
+
+        cy.fixture('ejercicio.json').then((selectors) => {
+            if(selectors.porcetaje_eco <= '55'){
+                ecologico = true;
+                cy.log('El celular es eco-frienly')
+            }
+        }).then(() => {
+            cy.log('El celular  no es eco-frienly')
+        });
+    }
+
+    
+
 
     
 }

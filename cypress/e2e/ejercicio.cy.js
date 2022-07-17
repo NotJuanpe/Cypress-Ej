@@ -72,17 +72,32 @@ describe('CP003',function(){
   
 })
 
-/* describe('CP004',function(){
+
+describe('CP004',function(){
   before(function(){
-    it('Que se pueda ingresar a la página indicada',function(){
       cy.visit('https://tienda.movistar.com.ar/')
       cy.url().should('include', 'https://tienda.movistar.com.ar/')
-    })
+  })
 
+  it('Que el equipo seleccionado sea el Z Flip',function(){
+    index_page.search('Z Flip')
+  })
+
+  it('Seleccionar Z Flip',function(){
+    productos_page.click_en_celular()
+  })
+
+  it('Seleccionar las caracteristicas generales',function(){
+    celular_page.seleccionar_caracteristicas()
+  })
+
+  it('Es ecologico',function(){
+    celular_page.es_ecologico()
   })
 
 
-}) */
+
+}) 
 
 Cypress.on('uncaught:exception', (err, runnable) => {
   return false;

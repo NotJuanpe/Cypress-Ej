@@ -11,7 +11,9 @@
     "info_financiacion":"#open-installments-modal",
     "banco":"#selectBank",
     "tarjeta":"#selectCardByBank",
-    "cantidad_equipos":"#toolbar-amount > span",
-    "tabla": ".bold-tr td"
+    "tabla": ".bold-tr td",
+    "caracteristicas_destacadas":"#tab-label-description-title",
+    "porcetaje_eco" : "#description > div > div > div > div > div.er-container > div.er-div.er-right-text > section > div > div.er-left > div > div.er-average > span",
+    "cantidad_equipos":"#toolbar-amount"
   }
   
